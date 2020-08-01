@@ -437,16 +437,8 @@ body {
 
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+
   fill: currentColor;
-
-  transition: border-color 250ms var(--timimng-fuction-bezier);
-}
-
-.customers-item-box:hover {
-  border: 1px solid var(--accent-color);
-  --color3: var(--accent-color);
 }
 
 .customers-item:not(:last-child) {
@@ -454,8 +446,20 @@ body {
 }
 
 .customers .link {
+  display: block;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   text-decoration: none;
   color: #afb1b8;
+
+  transition: border-color 250ms var(--timimng-fuction-bezier);
+}
+
+.customers .link:hover,
+.customers .link:focus {
+  border: 1px solid var(--accent-color);
+  --color3: var(--accent-color);
+  outline: none;
 }
 
 .customers .link .icon {
