@@ -685,6 +685,7 @@ body {
 }
 
 .projects-link {
+  display: block;
   text-decoration: none;
   color: inherit;
 }
@@ -706,7 +707,7 @@ body {
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(calc(100% + 1px));
   transition: transform 250ms var(--timimng-fuction-bezier);
 }
 
